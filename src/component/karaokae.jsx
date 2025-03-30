@@ -1,4 +1,4 @@
-// karaokae.js
+
 import React, { useState } from 'react';
 
 function KaraokeBilling() {
@@ -9,7 +9,7 @@ function KaraokeBilling() {
   const [qty2, setQty2] = useState('');
 
   const calculate = () => {
-    // เช็คว่าผู้ใช้กรอกจำนวนชั่วโมงหรือไม่
+
     if ((noHaveChecked && qty1.trim() === '') || (haveChecked && qty2.trim() === '')) {
       alert('กรุณากรอกจำนวนชั่วโมง');
       return;
@@ -19,7 +19,7 @@ function KaraokeBilling() {
     const rate = noHaveChecked ? 120 : 80;
 
     const totalAmount = hours * rate;
-    setTotal(totalAmount);
+    setTotal(totalAmount); 
   };
 
   return (
