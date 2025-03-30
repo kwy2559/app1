@@ -19,7 +19,7 @@ function KaraokeBilling() {
     const rate = noHaveChecked ? 120 : 80;
 
     const totalAmount = hours * rate;
-    setTotal(totalAmount.toFixed(2));
+    setTotal(totalAmount);
   };
 
   return (
